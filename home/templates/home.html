@@ -1,0 +1,49 @@
+{% extends "base.html" %}
+{% load static %}
+
+{% block extrastyles %}
+    <link rel="stylesheet" type="text/css" href="{% static 'css/home_style.css' %}">
+{% endblock %}
+
+{% block page_content %}
+
+<div class="container-fluid">
+
+<div id="carouselExampleIndicators" class="carousel slide hidden-xs" data-interval="3500" data-ride="carousel">
+    <ol class="carousel-indicators">
+        <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
+        <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
+        <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
+    </ol>
+    <div class="carousel-inner" role="listbox">
+        <div class="carousel-item active">
+            <div class="cards-for-carousal text-center">
+                <h1>Hi, I am Chetan</h1>      
+                <p>Some text that represents "Me"...</p>
+            </div>
+        </div>
+        <div class="carousel-item">
+            <div class="cards-for-carousal text-center">
+                <h1>I love to Code</h1>      
+                <p>Some text that represents "Me"...</p>
+            </div>
+        </div>
+        <div class="carousel-item">
+            <div class="cards-for-carousal text-center">
+                <h1>I also love travelling</h1>      
+                <p>Some text that represents "Me"...</p>
+            </div>            
+        </div>
+    </div>
+  <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
+    <span class="fa fa-angle-left" aria-hidden="true"></span>
+    <span class="sr-only">Previous</span>
+  </a>
+  <a class="carousel-control-next" href="#carouselExampleIndicators" role="button" data-slide="next">
+    <span class="fa fa-angle-right" aria-hidden="true"></span>
+    <span class="sr-only">Next</span>
+  </a>
+</div>
+
+</div>
+{% endblock %}

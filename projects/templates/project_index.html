@@ -1,22 +1,33 @@
 {% extends "base.html" %}
 {% load static %}
+
+{% block extrastyles %}
+    <link rel="stylesheet" type="text/css" href="{% static 'css/projects_style.css' %}">
+{% endblock %}
+
+
+<!-- Custom styles for this template -->
+<link rel="stylesheet" type="text/css" href="{% static 'css/projects_style.css' %}">
+
 {% block page_content %}
-<h1>Projects</h1>
-<div class="row">
-{% for project in projects %}
-    <div class="col-md-4">
-        <div class="card mb-2">
-            <img class="card-img-top" src="{% static project.image %}">
-            <div class="card-body">
-                <h5 class="card-title">{{ project.title }}</h5>
-                <p class="card-text">{{ project.description }}</p>
-                <a href="{% url 'project_detail' project.pk %}"
-                   class="btn btn-primary">
-                    Read More
-                </a>
+<div class="container">
+    <h1>Projects</h1>
+    <div class="row">
+    {% for project in projects %}
+        <div class="col-md-4">
+            <div class="card mb-2  bg-transparent">
+                <img class="card-img-top" src="{% static project.image %}">
+                <div class="card-body">
+                    <h5 class="card-title">{{ project.title }}</h5>
+                    <p class="card-text">{{ project.description }}</p>
+                    <a href="{% url 'project_detail' project.pk %}"
+                    class="btn btn-primary" >
+                        Read More
+                    </a>
+                </div>
             </div>
         </div>
+        {% endfor %}
     </div>
-    {% endfor %}
 </div>
 {% endblock %}

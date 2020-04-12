@@ -1,0 +1,48 @@
+{% extends "base.html" %}
+{% load static %}
+
+{% block extrastyles %}
+    <link rel="stylesheet" type="text/css" href="{% static 'css/resume_style.css' %}">
+{% endblock %}
+
+{% block page_content %}
+
+<div id="resume-page" class="container">
+    <div id="resume-header">
+        <div id="resume-header-left">
+            <h1>C H E T A N &nbsp;&nbsp; C H A U H A N</h1>
+            <h3><i>WEB DEVELOPER</i></h3>
+        </div>
+        <div id="resume-header-right">
+            <div id="contact-details">
+                <button type="button" class="btn btn-secondary">Download PDF</button><br>
+                <a href="mailto:chauhanchetan82@gmail.com">chauhanchetan82@gmail.com</a><br>
+                (91) 8334053394, (91) 7980312760
+            </div>
+        </div>
+    </div>
+    
+    <hr id="hr-resume-header" class"hr-resume">
+    <div id="resume-profile" class="resume-row">
+        <div id="resume-profile-left" class="resume-left-item">
+            <h3>Profile</h3>
+        </div>
+
+        <div id="resume-profile-right" class="resume-right-item">
+            <p> Lorem Ipsum Text<p>
+        </div>
+    </div>
+    <hr id="hr-resume-profile" class"hr-resume">
+
+    <div id="resume-experience" class="resume-row">
+        <div id="resume-eperience-left" class="resume-left-item">
+            <h3>Experience</h3>
+        </div>
+        <div id="resume-profile-right" class="resume-right-item">
+        
+        </div>
+    </div>
+    <hr class"hr-resume" style="border-top: 2px dashed #606263;">
+</div>
+
+{% endblock %}

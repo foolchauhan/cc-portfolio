@@ -1,0 +1,28 @@
+nav {
+    background-color: rgb(65, 101, 133, 0);
+    color: aliceblue;
+}
+
+.nav-link, .navbar-brand {
+    color: aliceblue;
+}
+
+body{
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.header {
+    min-height: 70px;
+    overflow: auto;
+}
+.content {
+    /* padding-top: 70px; */
+    min-height: 720px;
+    overflow: auto;
+}
+
+
+

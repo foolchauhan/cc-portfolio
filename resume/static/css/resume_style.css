@@ -1,0 +1,58 @@
+#resume-page {
+    width: 100%;
+    min-height: 800px;
+    overflow: auto;
+    background-color: aliceblue;
+    border: 2px solid #000000;
+    border-top: 4px solid #666666;;
+}
+
+#resume-header {
+    min-height: 100px;
+    overflow: auto;
+}
+
+#resume-header-left {
+    float: left;
+    color: #333333;
+}
+
+#resume-header-right {
+    float: right;
+    margin-top: 16px;
+    margin-right: 60px;
+    text-align:center;
+}   
+#resume-header-right a {
+    color: #943030;
+}
+#hr-resume-header, #hr-resume-profile, .hr-resume {
+    border-top: 2px dashed #606263;
+}
+
+.resume-row {
+    min-height: 100px;
+    overflow: auto;
+}
+
+.resume-left-item {
+    min-height: 100px;
+    float: left;
+    width: 25%;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    font-family: cursive;
+}
+
+.resume-right-item {
+    min-height: 100px;
+    float: left;
+    /* width: 25%; */
+    text-align: left;
+    /* display: flex; */
+    /* flex-direction: column; */
+    /* justify-content: center; */
+    font-family: fantasy;
+}

@@ -1,0 +1,33 @@
+<nav class="navbar navbar-expand-md fixed-top">
+        <a class="header-navbar navbar-brand" href="{% url 'home' %}"><strong>CC Portfolio</strong></a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarsExampleDefault" 
+                aria-controls="navbarsExampleDefault" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="collapse navbar-collapse" id="navbarsExampleDefault">
+          <ul class="navbar-nav mr-auto">
+            <li class="nav-item active">
+              <a class="nav-link" href="{% url 'project_index' %}">Projects</a>
+            </li>
+            <li class="nav-item active">
+              <a class="nav-link" href="{% url 'blog_index' %}">Blog</a>
+            </li>
+            <li class="nav-item active">
+              <a class="nav-link" href="{% url 'resume_index' %}">Resume</a>
+            </li>
+          </ul>
+
+        {% if user.is_authenticated %}
+            <ul class="navbar-nav mr-right">
+                <li class="nav-item">
+                    <a class="nav-link"">Logged in as {{ user.username }}</a>
+                </li>
+                <form class="form-inline my-2 my-lg-0" action="" method="POST">
+                    {% csrf_token %}
+                    <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Logout</button>
+                </form>
+            </ul>
+        {% endif %}
+        </div>
+</nav>
