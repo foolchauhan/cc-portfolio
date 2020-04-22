@@ -10,3 +10,8 @@ def resume_detail(request):
     context = {
     }
     return render(request, "resume_detail.html", context)
+
+def resume_detail2(request):
+    context = {
+    }
+    return render(request, "resume_detail2.html", context)

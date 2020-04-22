@@ -1,11 +1,16 @@
 nav {
-    background-color: rgb(65, 101, 133, 0);
+    background-color: rgba(120, 125, 129, 0.5);
     color: aliceblue;
+    min-height: 10px;
 }
 
 .nav-link, .navbar-brand {
     color: aliceblue;
 }
+
+.navbar-toggler { 
+    border-color: aliceblue; 
+} 
 
 body{
     background-attachment: fixed;
@@ -15,13 +20,25 @@ body{
 }
 
 .header {
-    min-height: 70px;
+    min-height: 10vh;
     overflow: auto;
 }
 .content {
     /* padding-top: 70px; */
-    min-height: 720px;
+    min-height: 85vh;
     overflow: auto;
+}
+
+.footer {
+    color: aliceblue;
+    padding: 0px;
+    margin-bottom: 0px;
+    min-height: 5px;
+    float: bottom;
+}
+
+.footer-copyright {
+    padding: 0px;
 }
 
 
